@@ -246,38 +246,104 @@ body {
 
 /* Skills Section */
 
-.skill-section {
+.skill-section{
     position: relative;
     margin: 100px 0;
 }
 
-.heading {
+.heading{
     text-align: center;
     font-size: 60px;
     color: #fff;
-    font-weight: 300;
-    margin-bottom: 300px;
     text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 100px;
 }
 
-.skill-container {
+.skills-container{
     width: 95%;
     margin: auto;
-    color: #fff;
     display: grid;
-    text-transform: capitalize;
-    grid-template-columns: reapeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 100px;
+    color: #fff;
 }
 
-.skill-card {
+.skill-card{
     position: relative;
 }
 
-.skill-img {
+.skill-img{
     display: block;
     margin: auto;
-    height: 300px;
+    height: 200px;
 }
 
-/* remaining from here */
+.skill-name{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0 20px;
+}
+
+.skill-info{
+    text-align: center;
+    opacity: 0.5;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.skill-level{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 50%;
+    border: 10px solid;
+}
+
+.skill-card:nth-child(1) .skill-level{
+    background: #ff4f4f28;
+    border-color: #ff4f4f;
+    color: #ff4f4f;
+}
+
+.skill-card:nth-child(2) .skill-level{
+    background: #4fa0ff28;
+    border-color: #4fa0ff;
+    color: #4fa0ff;
+}
+
+.skill-card:nth-child(3) .skill-level{
+    background: #ffed4f28;
+    border-color: #ffed4f;
+    color: #ffed4f;
+}
+
+.skill-card:nth-child(4) .skill-level{
+    background: #52ff4f28;
+    border-color: #52ff4f;
+    color: #52ff4f;
+}
+
+.skill-card:nth-child(5) .skill-level{
+    background: #4fdfff28;
+    border-color: #4fdfff;
+    color: #4fdfff;
+}
+
+/* Contact Section */
+
+.contact-section {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+}
